@@ -1,0 +1,19 @@
+/* Tema escuro (padrão) */
+:root {
+  --primary-bg-color: #0c121f;
+  --secondary-bg-color: #182335;
+  --accent-color: #0096e6;
+  --primary-text-color: #e2e8f0;
+  --secondary-text-color: #a0aec0;
+}
+
+/* Tema claro (automático) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-bg-color: #f5f8fc;
+    --secondary-bg-color: #dce5f2;
+    --accent-color: #0072b5;
+    --primary-text-color: #1e293b;
+    --secondary-text-color: #4a5568;
+  }
+}

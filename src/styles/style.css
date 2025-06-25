@@ -1,0 +1,17 @@
+/*===================
+    Configurações Globais
+===================*/
+@import "./global/global.css";
+
+/*===================
+    Cores
+===================*/
+@import "./utils/colors.css";
+
+/*===================
+    Tipografia
+===================*/
+@import "./utils/typography.css";
+
+
+@import "./global/header.css";
