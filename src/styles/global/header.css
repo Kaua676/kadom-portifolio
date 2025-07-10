@@ -1,15 +1,14 @@
 .header-container {
-  height: 15vh;
-  width: 80%;
+  height: 10vh;
+  width: 50%;
   margin: 0 auto;
-  padding: 1rem 2rem;
   position: fixed;
-  top: 10px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 2;
   backdrop-filter: blur(6px);
-  border: 2px solid var(--accent-color);
+  border: 5px solid var(--accent-color);
   border-radius: 24px;
 }
 
