@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Kadom</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header-container">
-      <div class="header-content">
-        <a href="./">
-          <img src="./assets/imgs/logo-dark.svg" alt="KaDom" />
-        </a>
 
-        <nav>
-          <ul class="header-menu font-roboto-m">
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#training">Formação</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="shortcut icon" href="./assets/imgs/favicon-light.svg" type="image/x-icon">
+  <title>Kadom</title>
+  <style>
 
-        <button class="color-mode-button" id="colorModeButton">
-          <img
-            src="./assets/imgs/dark-light-icon.svg"
-            alt="Ícone de modo claro e escuro"
-          />
-        </button>
+  </style>
+</head>
 
-        <button class="download-button font-roboto-m" id="downloadButton">
-          Currículo
-        </button>
+<body>
+  <header class="header-container">
+    <div class="header-content">
+      <a href="./">
+        <img src="./assets/imgs/logo-dark.svg" id="logo" alt="KaDom" />
+      </a>
+
+      <nav>
+        <ul class="header-menu font-roboto-m">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#training">Formação</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="color-mode-button" id="colorModeButton">
+        <img src="./assets/imgs/dark-light-icon.svg" alt="Ícone de modo claro e escuro" />
+      </button>
+
+      <button class="download-button font-roboto-m" id="downloadButton">
+        Currículo
+      </button>
+    </div>
+  </header>
+
+  <!-- Section com Grid de fundo -->
+  <section class="hero-section" id="home">
+    <div class="grid-container" id="grid" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-description">
+        <h1 class="font-poppins-xxl">
+          <span>Olá,</span>
+          <span>Meu nome é</span>
+          <span class="hero-name">Kauã Vicente Domingos</span>
+        </h1>
+        <p class="font-roboto-m">Cada projeto é uma oportunidade de combinar estética com funcionalidade, entregando
+          resultados que fazem a
+          diferença.</p>
       </div>
-    </header>
-  </body>
+
+      <div class="animated-blob">
+        <img src="../src/assets/imgs/hero-image.png" alt="Imagem animada" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Outras seções normais -->
+  <section id="about">
+    <h2>Sobre mim</h2>
+    <p>Conteúdo da seção sobre...</p>
+  </section>
+
+  <section id="training">
+    <h2>Formação</h2>
+    <p>Conteúdo da seção formação...</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experiência</h2>
+    <p>Conteúdo da seção experiência...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Conteúdo da seção contato...</p>
+  </section>
+
+  <script src="./scripts/alterLogo.js"></script>
+  <script src="./scripts/gridGenerate.js"></script>
+</body>
+
 </html>
