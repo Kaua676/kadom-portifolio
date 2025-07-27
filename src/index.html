@@ -5,18 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="shortcut icon" href="./assets/imgs/favicon-light.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="shortcut icon" id="favicon" href="./assets/imgs/favicon-light.svg" type="image/x-icon" />
   <title>Kadom</title>
-  <style>
-
-  </style>
+  <style></style>
 </head>
 
 <body>
   <header class="header-container">
     <div class="header-content">
       <a href="./">
-        <img src="./assets/imgs/logo-dark.svg" id="logo" alt="KaDom" />
+        <img src="./assets/imgs/logo-dark.svg" id="logo-img" alt="KaDom" />
       </a>
 
       <nav>
@@ -27,10 +26,6 @@
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
-
-      <button class="color-mode-button" id="colorModeButton">
-        <img src="./assets/imgs/dark-light-icon.svg" alt="Ícone de modo claro e escuro" />
-      </button>
 
       <button class="download-button font-roboto-m" id="downloadButton">
         Currículo
@@ -49,23 +44,143 @@
           <span>Meu nome é</span>
           <span class="hero-name">Kauã Vicente Domingos</span>
         </h1>
-        <p class="font-roboto-m">Cada projeto é uma oportunidade de combinar estética com funcionalidade, entregando
-          resultados que fazem a
-          diferença.</p>
+        <p class="font-roboto-m">
+          Cada projeto é uma oportunidade de combinar estética com
+          funcionalidade, entregando resultados que fazem a diferença.
+        </p>
       </div>
 
       <div class="animated-blob">
         <img src="../src/assets/imgs/hero-image.png" alt="Imagem animada" />
       </div>
-
     </div>
   </section>
 
+  <div class="divider"></div>
+
   <!-- Outras seções normais -->
-  <section id="about">
-    <h2>Sobre mim</h2>
-    <p>Conteúdo da seção sobre...</p>
+  <section id="about" class="about-section">
+    <div class="container about-content">
+      <h2 class="subtitle">Sobre mim</h2>
+
+      <div>
+        <p class="description font-roboto-m">
+          Sou um desenvolvedor front-end apaixonado por criar experiências
+          digitais incríveis. Com uma forte habilidade em HTML, CSS e
+          JavaScript, sou capaz de transformar ideias em realidade, utilizando
+          frameworks modernos como React e Vue. Além disso, tenho uma
+          profunda compreensão de design responsivo, garantindo que as
+          experiências digitais sejam acessíveis e elegantes em diferentes
+          dispositivos. Estou sempre em busca de novos desafios e
+          oportunidades para aprender e crescer como desenvolvedor front-end.
+        </p>
+
+        <div class="btn-container">
+          <button class="btn-icon" id="btn-left"><i class="fas fa-chevron-left"></i></button>
+          <button class="btn-icon" id="btn-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-inner">
+            <ul class="technologies-list">
+              <li class="technology">
+                <span class="faculdade-tipo">Bacharel</span>
+                <h3 class="faculdade-curso">Administação de Empresas</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+
+              <li class="technology">
+                <span class="faculdade-tipo">Tecnólogo</span>
+                <h3 class="faculdade-curso">TADS</h3>
+                <span class="faculdade-instituicao">Estacio</span>
+              </li>
+
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+            </ul>
+            <ul class="technologies-list">
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+              <li class="technology">
+                <span class="faculdade-tipo">Mestado</span>
+                <h3 class="faculdade-curso">UX Design</h3>
+                <span class="faculdade-instituicao">Insted</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="socials">
+          <h3 class="socials-title font-roboto-m">Redes Sociais</h3>
+          <ul class="socials-list font-roboto-m">
+            <li class="social">
+              <a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>Instagram
+              </a>
+            </li>
+            <li class="social">
+              <a href="https://github.com/kadom" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </li>
+            <li class="social">
+              <a href="https://www.linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
   </section>
+
+  <div class="divider"></div>
+
 
   <section id="training">
     <h2>Formação</h2>
@@ -84,6 +199,7 @@
 
   <script src="./scripts/alterLogo.js"></script>
   <script src="./scripts/gridGenerate.js"></script>
+  <script src="./scripts/carouselCards.js"></script>
 </body>
 
 </html>

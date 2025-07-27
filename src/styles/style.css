@@ -16,4 +16,6 @@
 
 @import "./global/header.css";
 
-@import "./hero-section.css"
+@import "./hero-section.css";
+
+@import "./about-section.css";

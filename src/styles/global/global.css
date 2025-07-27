@@ -47,3 +47,22 @@ button {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.subtitle {
+  font-size: 8rem;
+  word-break: keep-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 1ch;
+  color: var(--accent-color);
+  align-items: center;
+  display: flex;
+}
+
+.divider {
+  height: 3px;
+  background-color: var(--secondary-text-color);
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 2rem;
+}
