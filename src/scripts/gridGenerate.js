@@ -7,7 +7,6 @@ function gerarGrid() {
 
   let colunas, linhas;
 
-  // Define as proporções por resolução base
   if (largura >= 1920) {
     colunas = 10;
     linhas = 6;

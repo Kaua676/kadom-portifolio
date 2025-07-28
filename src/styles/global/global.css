@@ -50,10 +50,10 @@ button {
 
 .subtitle {
   font-size: 8rem;
-  word-break: keep-all;
+  word-break: break-all;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 1ch;
+  max-width: 4ch;
   color: var(--accent-color);
   align-items: center;
   display: flex;
