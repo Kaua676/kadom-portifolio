@@ -1,7 +1,7 @@
 const carouselInner = document.querySelector(".carousel-inner");
 const btnLeft = document.getElementById("btn-left");
 const btnRight = document.getElementById("btn-right");
-const slides = document.querySelectorAll(".technologies-list");
+const slides = document.querySelectorAll(".skills-list");
 let currentIndex = 0;
 
 function updateCarousel() {

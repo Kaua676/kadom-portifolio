@@ -15,55 +15,15 @@
   color: var(--primary-text-color);
 }
 
-.training-section .btn-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  margin: 2rem 0 0.5rem 0;
-}
-
-.training-section .btn-icon {
-  background-color: var(--secondary-bg-color);
-  color: var(--accent-color);
-  border: none;
-  border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.training-section .btn-icon:hover {
-  background-color: var(--accent-color);
-  color: var(--secondary-bg-color);
-}
-
-.training-section .carousel-wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin-bottom: 5rem;
-}
-
-.training-section .carousel-inner {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.training-section .technologies-list {
+.training-section .study-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   width: 100%;
-  flex-shrink: 0;
-  list-style: none;
-  padding-left: 0.2rem;
-  margin: 0;
+  margin: 3rem 0;
 }
 
-.training-section .technology {
+.training-section .formation {
   flex: 1;
   background-color: var(--secondary-bg-color);
   padding: 20px;
@@ -73,7 +33,7 @@
   position: relative;
 }
 
-.training-section .technology::before {
+.training-section .formation::before {
   content: "";
   display: block;
   width: 4px;
@@ -83,14 +43,16 @@
   left: -3px;
 }
 
-.training-section .courses-title {
+.training-section .courses-title,
+.languages-title {
   color: var(--primary-text-color);
   text-transform: uppercase;
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-.training-section .courses-title::before {
+.training-section .courses-title::before,
+.languages-title::before {
   content: "";
   display: block;
   width: 25px;
@@ -100,25 +62,41 @@
   left: -35px;
 }
 
-.training-section .courses-list{
+.training-section .courses-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  color: var(--secondary-text-color);
+  overflow-y: scroll;
+  max-height: 150px;
+}
+
+.courses-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.courses-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.courses-list::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
+.courses-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
+
+.languages {
+  margin-top: 5rem;
+}
+
+.training-section .languages-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   flex-direction: column;
   color: var(--secondary-text-color);
-}
-
-.training-section .social a {
-  transition: all 0.3s ease;
-}
-
-.training-section .social i {
-  color: var(--accent-color);
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.training-section .social a:hover {
-  color: var(--accent-color);
 }
