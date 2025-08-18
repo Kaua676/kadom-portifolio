@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="shortcut icon" id="favicon" href="./assets/imgs/favicon-light.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Kadom</title>
   <style></style>
 </head>
@@ -14,28 +15,36 @@
 <body>
   <header class="header-container">
     <div class="header-content">
-      <a href="./">
+      <a href="./" class="logo-link">
         <img src="./assets/imgs/logo-dark.svg" id="logo-img" alt="KaDom" />
       </a>
 
-      <nav>
-        <ul class="header-menu font-roboto-m">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#training">Formação</a></li>
-          <li><a href="#experience">Experiência</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-
-      <button class="download-button font-roboto-m" id="downloadButton">
-        Currículo
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="primary-navigation"
+        aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
+
+      <div class="menu-panel">
+        <nav aria-label="Navegação principal">
+          <ul class="header-menu font-roboto-m" id="primary-navigation">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#training">Formação</a></li>
+            <li><a href="#projects">Experiência</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="download-button font-roboto-m" id="downloadButton">
+          Currículo
+        </button>
+      </div>
     </div>
   </header>
 
+
   <!-- HERO SECTION -->
   <section class="hero-section" id="home">
-    <div class="grid-container" id="grid" aria-hidden="true"></div>
+    <div class="grid-container" id="grid" aria-hidden="true" role="presentation"></div>
 
     <div class="container hero-content">
       <div class="hero-description">
@@ -56,6 +65,7 @@
     </div>
   </section>
 
+
   <div class="divider"></div>
 
   <!-- ABOUT SECTION -->
@@ -63,119 +73,172 @@
     <div class="container about-content">
       <h2 class="subtitle">Sobre mim</h2>
 
-      <div>
+      <div class="about-right">
         <p class="description font-roboto-m">
-          Sou um desenvolvedor front-end apaixonado por criar experiências
-          digitais incríveis. Com uma forte habilidade em HTML, CSS e
-          JavaScript, sou capaz de transformar ideias em realidade, utilizando
-          frameworks modernos como React e Vue. Além disso, tenho uma
-          profunda compreensão de design responsivo, garantindo que as
-          experiências digitais sejam acessíveis e elegantes em diferentes
-          dispositivos. Estou sempre em busca de novos desafios e
-          oportunidades para aprender e crescer como desenvolvedor front-end.
+
         </p>
 
         <div class="btn-container">
-          <button class="btn-icon" id="btn-left"><i class="fas fa-chevron-left"></i></button>
-          <button class="btn-icon" id="btn-right"><i class="fas fa-chevron-right"></i></button>
+          <button class="btn-icon" id="btn-left" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn-icon" id="btn-right" aria-label="Próximo">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
 
-        <div class="carousel-wrapper">
-          <div class="carousel-inner">
-            <ul class="skills-list">
-              <li class="skill">
-                <span class="faculdade-tipo">Bacharel</span>
-                <h3 class="faculdade-curso">Administação de Empresas</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-
-              <li class="skill">
-                <span class="faculdade-tipo">Tecnólogo</span>
-                <h3 class="faculdade-curso">TADS</h3>
-                <span class="faculdade-instituicao">Estacio</span>
-              </li>
-
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-            </ul>
-            <ul class="skills-list">
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-              <li class="skill">
-                <span class="faculdade-tipo">Mestado</span>
-                <h3 class="faculdade-curso">UX Design</h3>
-                <span class="faculdade-instituicao">Insted</span>
-              </li>
-            </ul>
+        <div class="swiper mySkillsSwiper">
+          <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                  alt="HTML5 Badge" />
+                <span class="skill-type font-roboto-xs">Linguagem</span>
+                <h3 class="skill-name font-poppins-m">HTML5</h3>
+                <span class="skill-description font-roboto-s">Marcação semântica</span>
+              </article>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                  alt="CSS3 Badge" />
+                <span class="skill-type font-roboto-xs">Linguagem</span>
+                <h3 class="skill-name font-poppins-m">CSS3</h3>
+                <span class="skill-description font-roboto-s">Estilização visual</span>
+              </article>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img
+                  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                  alt="JavaScript Badge" />
+                <span class="skill-type font-roboto-xs">Linguagem</span>
+                <h3 class="skill-name font-poppins-m">JavaScript</h3>
+                <span class="skill-description font-roboto-s">Lógica e interatividade</span>
+              </article>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                  alt="React Badge" />
+                <span class="skill-type font-roboto-xs">Front-end</span>
+                <h3 class="skill-name font-poppins-m">React</h3>
+                <span class="skill-description font-roboto-s">SPA e componentes</span>
+              </article>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide ">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+                  alt="Node.js Badge" />
+                <span class="skill-type font-roboto-xs">Back-end</span>
+                <h3 class="skill-name font-poppins-m">Node.js</h3>
+                <span class="skill-description font-roboto-s">Servidor e APIs</span>
+              </article>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"
+                  alt="C# Badge" />
+                <span class="skill-type font-roboto-xs">Linguagem</span>
+                <h3 class="skill-name font-poppins-m">C#</h3>
+                <span class="skill-description font-roboto-s">Back-end e aplicações</span>
+              </article>
+            </div>
+            <!-- 7 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img
+                  src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                  alt="Tailwind CSS Badge" />
+                <span class="skill-type font-roboto-xs">Front-end</span>
+                <h3 class="skill-name font-poppins-m">Tailwind CSS</h3>
+                <span class="skill-description font-roboto-s">Estilização utilitária</span>
+              </article>
+            </div>
+            <!-- 8 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
+                  alt="Python Badge" />
+                <span class="skill-type font-roboto-xs">Linguagem</span>
+                <h3 class="skill-name font-poppins-m">Python</h3>
+                <span class="skill-description font-roboto-s">Automação e scripts</span>
+              </article>
+            </div>
+            <!-- 9 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img
+                  src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+                  alt="PostgreSQL Badge" />
+                <span class="skill-type font-roboto-xs">Banco de Dados</span>
+                <h3 class="skill-name font-poppins-m">PostgreSQL</h3>
+                <span class="skill-description font-roboto-s">SGBD Relacional</span>
+              </article>
+            </div>
+            <!-- 10 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+                  alt="Git Badge" />
+                <span class="skill-type font-roboto-xs">Ferramenta</span>
+                <h3 class="skill-name font-poppins-m">Git</h3>
+                <span class="skill-description font-roboto-s">Controle de versão</span>
+              </article>
+            </div>
+            <!-- 11 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
+                  alt="Figma Badge" />
+                <span class="skill-type font-roboto-xs">Design</span>
+                <h3 class="skill-name font-poppins-m">Figma</h3>
+                <span class="skill-description font-roboto-s">UI/UX e protótipos</span>
+              </article>
+            </div>
+            <!-- 12 -->
+            <div class="swiper-slide">
+              <article class="skill">
+                <img
+                  src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white"
+                  alt="Selenium Badge" />
+                <span class="skill-type font-roboto-xs">Automação</span>
+                <h3 class="skill-name font-poppins-m">Selenium</h3>
+                <span class="skill-description font-roboto-s">Testes e scraping</span>
+              </article>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
+
 
         <div class="socials">
           <h3 class="socials-title font-roboto-m">Redes Sociais</h3>
           <ul class="socials-list font-roboto-m">
             <li class="social">
-              <a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/Kaua_676" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-instagram"></i>Instagram
               </a>
             </li>
             <li class="social">
-              <a href="https://github.com/kadom" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Kaua676" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i>Github
               </a>
             </li>
             <li class="social">
-              <a href="https://www.linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/kaua676/" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i>Linkedin
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -184,16 +247,12 @@
   <!-- TRAINING SECTION -->
   <section id="training" class="training-section">
     <div class="container training-content">
+      <h2 class="subtitle">Formação</h2>
+
       <div>
         <p class="description font-roboto-m">
-          Sou um desenvolvedor front-end apaixonado por criar experiências
-          digitais incríveis. Com uma forte habilidade em HTML, CSS e
-          JavaScript, sou capaz de transformar ideias em realidade, utilizando
-          frameworks modernos como React e Vue. Além disso, tenho uma
-          profunda compreensão de design responsivo, garantindo que as
-          experiências digitais sejam acessíveis e elegantes em diferentes
-          dispositivos. Estou sempre em busca de novos desafios e
-          oportunidades para aprender e crescer como desenvolvedor front-end.
+          Acredito no aprendizado contínuo como forma de evolução profissional. Aqui estão minhas três especializações
+          e os cursos que ampliaram meus conhecimentos ao longo da trajetória.
         </p>
 
         <ul class="study-list font-roboto-s">
@@ -259,24 +318,242 @@
         </div>
       </div>
 
-      <h2 class="subtitle">Formação</h2>
     </div>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experiência</h2>
-    <p>Conteúdo da seção experiência...</p>
-  </section>
+  <div class="divider"></div>
 
-  <section id="contact">
-    <h2>Contato</h2>
-    <p>Conteúdo da seção contato...</p>
-  </section>
+  <!-- PROJECTS SECTION -->
+  <!-- <section id="projects" class="projects-section">
+    <div class="container projects-content">
+      <h2 class="subtitle">Meu Portifólio</h2>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">lorem</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
+                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
+                  similique
+                  magni aliquid. Veritatis, expedita itaque.</p>
+                <button class="button">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next slide-right"></div>
+        <div class="swiper-button-prev slide-left"></div>
+        <div class="swiper-pagination slide-pagination"></div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <div class="divider"></div>
+
+  <!-- <section id="contact" class="contact-section">
+    <div class="container contact-content">
+      <h2 class="subtitle">Entre em Contato</h2>
+
+      <div>
+        <form class="contact-form" action="">
+          <input class="input-group font-roboto-m" type="text" placeholder="Seu nome" required>
+          <input class="input-group font-roboto-m" type="email" placeholder="Seu email" required>
+          <input class="input-group font-roboto-m" type="phone" placeholder="Seu telefone" required>
+          <textarea class="textarea-group font-roboto-m" placeholder="Sua mensagem" required></textarea>
+          <button class="form-btn font-roboto-m" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <footer class="footer-section">
+    <div class="container footer-content">
+      <div class="upper-footer">
+        <div class="email font-roboto-m">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="kadom.dev@outlook.com.br">kadom.dev@outlook.com.br</a>
+        </div>
+        <div class="socials font-roboto-m">
+          <a href="https://www.instagram.com/Kaua_676" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Kaua676" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kaua676/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="lower-footer">
+        <p class="font-roboto-m">Kadom © 2025 - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer> -->
 
   <script src="./scripts/alterLogo.js"></script>
   <script src="./scripts/gridGenerate.js"></script>
-  <script src="./scripts/carouselCards.js"></script>
+  <script src="./scripts/aboutCarousel.js"></script>
+  <script src="./scripts/projectsCarousel.js"></script>
+  <script src="./scripts/menu-mobile.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.mySkillsSwiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        grid: { rows: 2, fill: 'row' },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { prevEl: '#btn-left', nextEl: '#btn-right' },
+        breakpoints: {
+          0: { slidesPerView: 1, grid: { rows: 2 } },
+          481: { slidesPerView: 2, grid: { rows: 2 } },
+          1025: { slidesPerView: 3, grid: { rows: 2 } },
+        },
+      });
+    });
+  </script>
 </body>
 
 </html>

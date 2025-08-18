@@ -13,11 +13,19 @@
 ===================*/
 @import "./utils/typography.css";
 
-
 @import "./global/header.css";
+
+@import "./global/footer.css";
+
+/*===================
+    Telas
+===================*/
 
 @import "./hero-section.css";
 
 @import "./about-section.css";
 
 @import "./training-section.css";
+
+@import "./projects-section.css";
+@import "./contact-section.css";
