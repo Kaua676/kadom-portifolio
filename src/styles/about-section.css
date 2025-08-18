@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 1400px) {
+  .about-content {
+    gap: 50px;
+  }
   .about-right {
     max-width: 800px;
   }
