@@ -1,0 +1,121 @@
+.projects-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-section .subtitle {
+  max-width: none;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.projects-section .slide-container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.projects-section .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.projects-section .card {
+  border-radius: 25px;
+  background-color: var(--secondary-bg-color);
+}
+
+.projects-section .image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.projects-section .image-content {
+  row-gap: 5px;
+  position: relative;
+}
+
+.projects-section .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 25px 25px 0 25px;
+}
+
+.projects-section .overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--accent-color);
+}
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: var(--secondary-bg-color);
+}
+
+.projects-section .card-image {
+  position: relative;
+  width: 370px;
+  height: 250px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 20px;
+}
+
+.projects-section .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+}
+
+.projects-section .name {
+  color: var(--primary-text-color);
+}
+
+.projects-section .description {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.projects-section .button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projects-section .slide-right {
+  right: 0;
+  color: var(--accent-color);
+}
+.projects-section .slide-left {
+  left: 0;
+  color: var(--accent-color);
+}
+
+.projects-section .swiper-pagination-bullet{
+  background-color: var(--secondary-bg-color);
+  opacity: 1;
+}
+
+.projects-section .swiper-pagination-bullet-active{
+  background-color: var(--accent-color);
+}

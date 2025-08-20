@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -35,6 +39,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  -webkit-user-drag: none;
 }
 
 button {
@@ -50,10 +55,10 @@ button {
 
 .subtitle {
   font-size: 8rem;
-  word-break: keep-all;
+  word-break: break-all;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 1ch;
+  max-width: 4ch;
   color: var(--accent-color);
   align-items: center;
   display: flex;
@@ -63,6 +68,39 @@ button {
   height: 3px;
   background-color: var(--secondary-text-color);
   margin: 0 auto;
+  border-radius: 24px;
   width: 80%;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .subtitle {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subtitle {
+    font-size: 6rem;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 3rem;
+  }
 }

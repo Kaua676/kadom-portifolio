@@ -1,28 +1,33 @@
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 150px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 300px;
 }
 
-.description {
+.about-section .subtitle {
+  word-break: keep-all;
+}
+
+.about-section .description {
   color: var(--primary-text-color);
 }
 
-.btn-container {
+.about-section .btn-container {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
   margin: 2rem 0 0.5rem 0;
 }
 
-.btn-icon {
+.about-section .btn-icon {
   background-color: var(--secondary-bg-color);
   color: var(--accent-color);
   border: none;
@@ -32,48 +37,43 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.btn-icon:hover {
+.about-section .btn-icon:hover {
   background-color: var(--accent-color);
   color: var(--secondary-bg-color);
 }
 
-.carousel-wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin-bottom: 5rem;
-}
-
-.carousel-inner {
+.about-section .swiper {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  transition: transform 0.5s ease-in-out;
+  max-width: 900px;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  padding-left: 3px;
+}
+.about-section .swiper-wrapper {
+  align-items: stretch;
+}
+.about-section .swiper-slide {
+  display: flex;
+  height: auto;
+}
+.about-section .swiper-pagination {
+  position: initial;
+  margin-top: 16px;
 }
 
-.technologies-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  flex-shrink: 0;
-  list-style: none;
-  padding-left: 0.2rem;
-  margin: 0;
-}
-
-.technology {
-  flex: 1;
+.about-section .skill {
   background-color: var(--secondary-bg-color);
   padding: 20px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 300px;
+  color: var(--primary-text-color);
 }
-
-.technology::before {
+.about-section .skill::before {
   content: "";
   display: block;
   width: 4px;
@@ -82,15 +82,19 @@
   position: absolute;
   left: -3px;
 }
+.about-section .skill img {
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+  align-self: start;
+}
 
-.socials-title {
+.about-section .socials-title {
   color: var(--primary-text-color);
   text-transform: uppercase;
   position: relative;
   margin-bottom: 1.5rem;
 }
-
-.socials-title::before {
+.about-section .socials-title::before {
   content: "";
   display: block;
   width: 25px;
@@ -100,7 +104,7 @@
   left: -35px;
 }
 
-.socials-list {
+.about-section .socials-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -108,17 +112,127 @@
   flex-direction: column;
   color: var(--secondary-text-color);
 }
-
-.social a {
+.about-section .social a {
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
-
-.social i {
+.about-section .social i {
   color: var(--accent-color);
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
-
-.social a:hover {
+.about-section .social a:hover {
   color: var(--accent-color);
+}
+
+@media (max-width: 1400px) {
+  .about-content {
+    gap: 50px;
+  }
+  .about-right {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-section .swiper {
+    max-width: 800px;
+  }
+  .about-section .btn-container button {
+    display: none;
+  }
+  .about-section .skill {
+    width: 400px;
+  }
+  .about-section .socials-title {
+    text-align: center;
+  }
+  .about-section .socials-title::before {
+    left: 38%;
+  }
+  .about-section .socials-list {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section .skill {
+    width: 300px;
+  }
+  .about-section .swiper {
+    max-width: 600px;
+  }
+  .socials {
+    text-align: center;
+  }
+  .about-section .socials-title {
+    display: inline-block;
+    position: relative;
+  }
+
+  .about-section .socials-title::before {
+    width: 100%;
+    height: 2px;
+    background: var(--accent-color);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    gap: 24px;
+  }
+  .about-section .subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .mySkillsSwiper {
+    overflow: visible;
+    max-width: 100%;
+  }
+  .mySkillsSwiper .swiper-pagination,
+  .about-section .btn-container {
+    display: none;
+  }
+
+  .about-section .swiper {
+    margin-bottom: 2rem;
+  }
+
+  .mySkillsSwiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: dense;
+    transform: none !important;
+    height: auto;
+    width: 100% !important;
+    margin: 3rem 0;
+  }
+  .mySkillsSwiper .swiper-slide {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  .mySkillsSwiper .skill {
+    height: 100%;
+    width: 100%;
+    min-height: auto;
+  }
+  .mySkillsSwiper .swiper-slide:nth-child(6n + 1),
+  .mySkillsSwiper .swiper-slide:nth-child(6n) {
+    grid-column: 1 / -1;
+  }
+  .mySkillsSwiper .swiper-slide:nth-child(6n + 3) {
+    grid-column: 2;
+    grid-row: span 2;
+  }
 }

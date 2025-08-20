@@ -67,3 +67,44 @@
 .font-roboto-xl {
   font: 500 var(--fs-xl) / 1.25 "Roboto", sans-serif;
 }
+
+/* Telas grandes até 1400px */
+@media (max-width: 1400px) {
+  :root {
+    --fs-xxl: clamp(1.8rem, 5vw, 3.5rem);
+    --fs-xl: clamp(1.4rem, 2.5vw, 1.8rem);
+    --fs-l: clamp(1.1rem, 1.8vw, 1.35rem);
+  }
+}
+
+/* Laptops até 1024px */
+@media (max-width: 1024px) {
+  :root {
+    --fs-xxl: clamp(1.6rem, 4.5vw, 3rem);
+    --fs-xl: clamp(1.25rem, 2.2vw, 1.6rem);
+    --fs-l: clamp(1rem, 1.6vw, 1.25rem);
+    --fs-m-plus: 1rem;
+  }
+}
+
+/* Tablets até 768px */
+@media (max-width: 768px) {
+  :root {
+    --fs-xxl: clamp(1.4rem, 4vw, 2.5rem);
+    --fs-xl: clamp(1.15rem, 2vw, 1.4rem);
+    --fs-l: clamp(0.95rem, 1.5vw, 1.15rem);
+    --fs-m-plus: 0.95rem;
+  }
+}
+
+/* Celulares até 480px */
+@media (max-width: 480px) {
+  :root {
+    --fs-xxl: clamp(1.2rem, 3.5vw, 2rem);
+    --fs-xl: clamp(1rem, 1.8vw, 1.25rem);
+    --fs-l: clamp(0.875rem, 1.4vw, 1rem);
+    --fs-m-plus: 0.875rem;
+    --fs-m: 0.8125rem;
+    --fs-s: 0.75rem;
+  }
+}
