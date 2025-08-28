@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="shortcut icon" id="favicon" href="./assets/imgs/favicon-light.svg" type="image/x-icon" />
+  <link rel="shortcut icon" id="favicon" href="./src/assets/imgs/favicon-light.svg" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
@@ -20,7 +20,7 @@
   <header class="header-container">
     <div class="header-content">
       <a href="./" class="logo-link">
-        <img src="./assets/imgs/logo-dark.svg" id="logo-img" alt="KaDom" />
+        <img src="./src/assets/imgs/logo-dark.svg" id="logo-img" alt="KaDom" />
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="primary-navigation"
@@ -64,7 +64,7 @@
       </div>
 
       <div class="animated-blob">
-        <img src="../src/assets/imgs/hero-image.png" alt="Imagem animada" />
+        <img src="./src/assets/imgs/hero-image.png" alt="Imagem animada" />
       </div>
     </div>
   </section>
@@ -330,169 +330,184 @@
   <div class="divider"></div>
 
   <!-- PROJECTS SECTION -->
-  <!-- <section id="projects" class="projects-section">
+  <section id="projects" class="projects-section">
     <div class="container projects-content">
-      <h2 class="subtitle">Meu Portifólio</h2>
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">lorem</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sed et non
-                  inventore nam reprehenderit impedit sapiente assumenda ea fugiat quo saepe libero itaque,
-                  similique
-                  magni aliquid. Veritatis, expedita itaque.</p>
-                <button class="button">View More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next slide-right"></div>
-        <div class="swiper-button-prev slide-left"></div>
-        <div class="swiper-pagination slide-pagination"></div>
-      </div>
+      <h2 class="subtitle">Meu Portfólio</h2>
 
+      <div class="swiper slide-container">
+        <div class="slide-content">
+          <div class="swiper-wrapper card-wrapper">
+
+            <!-- 1 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 1.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">Rancho da Capivara</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  Plataforma web de gestão e presença digital para o Balneário Rancho da Capivara, centralizando
+                  reservas, cadastro de visitantes, controle de vendas e relatórios, além de permitir agendamento online
+                  pelo público
+                </p>
+
+                <footer>
+                  <a href="https://github.com/Kaua676/rancho-da-capivara" class="button project-cta font-poppins-s"
+                    aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 2.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">Govix</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  Govix é uma aplicação web que analisa transferências públicas e fornece insights estratégicos para
+                  empresas que atuam no setor GovTech. A plataforma integra dados governamentais com visualizações
+                  inteligentes, mapa de calor e um painel de recomendações baseadas em IA.
+                </p>
+
+                <footer>
+                  <a href="#" class="button project-cta font-poppins-s" aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 3.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">NutriVision</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  O NutriVision é uma plataforma completa para análise nutricional de cardápios escolares. A solução é
+                  dividida em três módulos principais: API de formatação de cardápios, base de dados nutricional e
+                  interface web interativa.
+                </p>
+
+                <footer>
+                  <a href="#" class="button project-cta font-poppins-s" aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 1.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">Rancho da Capivara</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odio sed et non inventore nam reprehenderit impedit sapiente assumenda.
+                </p>
+
+                <footer>
+                  <a href="#" class="button project-cta font-poppins-s" aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 1.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">Rancho da Capivara</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odio sed et non inventore nam reprehenderit impedit sapiente assumenda.
+                </p>
+
+                <footer>
+                  <a href="#" class="button project-cta font-poppins-s" aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="swiper-slide project-card">
+              <figure class="project-media">
+                <span class="overlay"></span>
+                <img src="./src/assets/projects/project 1.png" alt="Prévia do projeto lorem">
+              </figure>
+
+              <div class="project-content">
+                <header class="project-header">
+                  <h3 class="project-title font-poppins-l">Rancho da Capivara</h3>
+                </header>
+
+                <p class="project-description font-roboto-s">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odio sed et non inventore nam reprehenderit impedit sapiente assumenda.
+                </p>
+
+                <footer>
+                  <a href="#" class="button project-cta font-poppins-s" aria-label="Ver mais sobre lorem">
+                    Ver Mais
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+
+
+          </div>
+          <div class="swiper-pagination slide-pagination" aria-label="Paginação dos projetos"></div>
+        </div>
+
+        <button class="swiper-button-prev slide-left" aria-label="Slide anterior"></button>
+        <button class="swiper-button-next slide-right" aria-label="Próximo slide"></button>
+      </div>
     </div>
-  </section> -->
+  </section>
+
 
   <div class="divider"></div>
 
-  <!-- <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="container contact-content">
       <h2 class="subtitle">Entre em Contato</h2>
 
@@ -506,9 +521,9 @@
         </form>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <footer class="footer-section">
+  <footer class="footer-section">
     <div class="container footer-content">
       <div class="upper-footer">
         <div class="email font-roboto-m">
@@ -532,16 +547,16 @@
         <p class="font-roboto-m">Kadom © 2025 - Todos os direitos reservados</p>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
-  <script src="./scripts/alterLogo.js"></script>
-  <script src="./scripts/gridGenerate.js"></script>
-  <script src="./scripts/aboutCarousel.js"></script>
-  <script src="./scripts/projectsCarousel.js"></script>
-  <script src="./scripts/menu-mobile.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="./src/scripts/alterLogo.js"></script>
+  <script src="./src/scripts/gridGenerate.js"></script>
+  <script src="./src/scripts/aboutCarousel.js"></script>
+  <script src="./src/scripts/projectsCarousel.js"></script>
+  <script src="./src/scripts/menu-mobile.js"></script>
 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
