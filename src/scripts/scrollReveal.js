@@ -21,7 +21,7 @@
     sr.reveal('.about-section .btn-container', { origin: 'bottom', delay: 150 });
 
     // Skills
-    sr.reveal('.mySkillsSwiper .skill', { origin: 'bottom', interval: 60, scale: 0.98 });
+    sr.reveal('.mySkillsSwiper .skill', { origin: 'left', interval: 60 });
 
     // Socials
     sr.reveal('.about-section .socials-title', { origin: 'bottom' });
