@@ -34,9 +34,8 @@
           </ul>
         </nav>
 
-        <button class="download-button font-roboto-m" id="downloadButton">
-          Currículo
-        </button>
+        <a class="download-button font-roboto-m" href="./assets/public/Curriculo 2025 Kauã Vicente Domingos.pdf"
+          download="curriculo.pdf">Curriculo <i class="fa-solid fa-download"></i></a>
       </div>
     </div>
   </header>
@@ -60,7 +59,7 @@
       </div>
 
       <div class="animated-blob">
-        <img src="./assets/imgs/hero-image.png" alt="Imagem animada" />
+        <img src="./assets/imgs/hero-image 2.png" alt="Imagem animada" />
       </div>
     </div>
   </section>
@@ -254,7 +253,7 @@
 
       <div>
         <p class="description font-roboto-m">
-          Acredito no aprendizado contínuo como forma de evolução profissional. Aqui estão minhas três especializações
+          Acredito no aprendizado contínuo como forma de evolução profissional. Aqui estão minhas duas especializações
           e os cursos que ampliaram meus conhecimentos ao longo da trajetória.
         </p>
 
@@ -353,8 +352,8 @@
                 </p>
 
                 <footer>
-                  <a href="https://github.com/Kaua676/rancho-da-capivara" target="_blank" class="button project-cta font-poppins-s"
-                    aria-label="Ver mais sobre Rancho da Capivara">
+                  <a href="https://github.com/Kaua676/rancho-da-capivara" target="_blank"
+                    class="button project-cta font-poppins-s" aria-label="Ver mais sobre Rancho da Capivara">
                     Ver Mais
                   </a>
                 </footer>
@@ -510,13 +509,34 @@
       <h2 class="subtitle">Entre em Contato</h2>
 
       <div>
-        <form class="contact-form" action="">
-          <input class="input-group font-roboto-m" type="text" placeholder="Seu nome" required>
-          <input class="input-group font-roboto-m" type="email" placeholder="Seu email" required>
-          <input class="input-group font-roboto-m" type="phone" placeholder="Seu telefone" required>
-          <textarea class="textarea-group font-roboto-m" placeholder="Sua mensagem" required></textarea>
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xzzaepgj" method="POST" novalidate>
+          <label class="sr-only" for="nome">Seu nome</label>
+          <input id="nome" name="nome" class="input-group font-roboto-m" type="text" placeholder="Seu nome" required>
+
+          <label class="sr-only" for="email">Seu e-mail</label>
+          <input id="email" name="email" class="input-group font-roboto-m" type="email" placeholder="Seu email"
+            required>
+
+          <label class="sr-only" for="telefone">Seu telefone</label>
+          <input id="telefone" name="telefone" class="input-group font-roboto-m" type="tel" placeholder="Seu telefone">
+
+          <label class="sr-only" for="mensagem">Sua mensagem</label>
+          <textarea id="mensagem" name="mensagem" class="textarea-group font-roboto-m" placeholder="Sua mensagem"
+            required></textarea>
+
+          <input type="hidden" name="_subject" value="Novo contato pelo site Kadom">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
           <button class="form-btn font-roboto-m" type="submit">Enviar</button>
         </form>
+
+        <div id="toast" class="toast" role="status" aria-live="polite">
+          <span id="toastMsg"></span>
+          <span class="toast__bar" aria-hidden="true"></span>
+        </div>
+
+
+
       </div>
     </div>
   </section>
@@ -547,7 +567,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="./scripts/alterLogo.js"></script>
@@ -555,6 +574,9 @@
   <script src="./scripts/aboutCarousel.js"></script>
   <script src="./scripts/projectsCarousel.js"></script>
   <script src="./scripts/menu-mobile.js"></script>
+  <script src="./scripts/scrollReveal.js"></script>
+  <script src="./scripts/contactForm.js" defer></script>
+
 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
