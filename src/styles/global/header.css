@@ -45,6 +45,9 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  display: flex;
+  gap: 10px;
 }
 
 .download-button:hover {
@@ -63,23 +66,10 @@
   cursor: pointer;
 }
 
-.menu-toggle .bar {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--primary-text-color);
-  margin: 4px 0;
+.menu-toggle .hamburger-menu {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
   transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.header-container.is-open .menu-toggle .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
-.header-container.is-open .menu-toggle .bar:nth-child(2) {
-  opacity: 0;
-}
-.header-container.is-open .menu-toggle .bar:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
 }
 
 @media (max-width: 1200px) {
