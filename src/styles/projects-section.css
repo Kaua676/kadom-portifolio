@@ -9,6 +9,10 @@ html {
   justify-content: center;
 }
 
+.projects-section .container{
+  padding: 0;
+}
+
 .projects-section .subtitle {
   max-width: none;
   justify-content: center;
