@@ -344,7 +344,6 @@
 
   <div class="divider"></div>
 
-  <!-- PROJECTS SECTION -->
   <section id="projects" class="projects-section">
     <div class="container projects-content">
       <h2 class="subtitle">Meu Portfólio</h2>
@@ -353,114 +352,6 @@
         <div class="slide-content">
           <div class="swiper-wrapper card-wrapper">
 
-            <!-- 1 -->
-            <article class="swiper-slide project-card">
-              <figure class="project-media">
-                <span class="overlay"></span>
-                <img src="./assets/projects/project-1.png" alt="Prévia do projeto Rancho da Capivara">
-              </figure>
-
-              <div class="project-content">
-                <header class="project-header">
-                  <h3 class="project-title font-poppins-l">Rancho da Capivara</h3>
-                </header>
-
-                <p class="project-description font-roboto-s">
-                  Plataforma web de gestão e presença digital para o Balneário Rancho da Capivara, centralizando
-                  reservas, cadastro de visitantes, controle de vendas e relatórios, além de permitir agendamento online
-                  pelo público
-                </p>
-
-                <footer>
-                  <a href="https://github.com/Kaua676/rancho-da-capivara" target="_blank"
-                    class="button project-cta font-poppins-s" aria-label="Ver mais sobre Rancho da Capivara">
-                    Ver Mais
-                  </a>
-                </footer>
-              </div>
-            </article>
-
-            <!-- 2 -->
-            <article class="swiper-slide project-card">
-              <figure class="project-media">
-                <span class="overlay"></span>
-                <img src="./assets/projects/project-2.png" alt="Prévia do projeto Govix">
-              </figure>
-
-              <div class="project-content">
-                <header class="project-header">
-                  <h3 class="project-title font-poppins-l">Govix</h3>
-                </header>
-
-                <p class="project-description font-roboto-s">
-                  Govix é uma aplicação web que analisa transferências públicas e fornece insights estratégicos para
-                  empresas que atuam no setor GovTech. A plataforma integra dados governamentais com visualizações
-                  inteligentes, mapa de calor e um painel de recomendações baseadas em IA.
-                </p>
-
-                <footer>
-                  <a href="https://github.com/Kaua676/govix" target="_blank" class="button project-cta font-poppins-s"
-                    aria-label="Ver mais sobre Govix">
-                    Ver Mais
-                  </a>
-                </footer>
-              </div>
-            </article>
-
-            <!-- 3 -->
-            <article class="swiper-slide project-card">
-              <figure class="project-media">
-                <span class="overlay"></span>
-                <img src="./assets/projects/project-3.png" alt="Prévia do projeto NutriVision">
-              </figure>
-
-              <div class="project-content">
-                <header class="project-header">
-                  <h3 class="project-title font-poppins-l">NutriVision</h3>
-                </header>
-
-                <p class="project-description font-roboto-s">
-                  O NutriVision é uma plataforma completa para análise nutricional de cardápios escolares. A solução é
-                  dividida em três módulos principais: API de formatação de cardápios, base de dados nutricional e
-                  interface web interativa.
-                </p>
-
-                <footer>
-                  <a href="https://github.com/J-A-Digix" target="_blank" class="button project-cta font-poppins-s"
-                    aria-label="Ver mais sobre NutriVision">
-                    Ver Mais
-                  </a>
-                </footer>
-              </div>
-            </article>
-
-            <!-- 4 -->
-            <article class="swiper-slide project-card">
-              <figure class="project-media">
-                <span class="overlay"></span>
-                <img src="./assets/projects/project 4.png" alt="Prévia do projeto Portal Consulta Empreendimentos">
-              </figure>
-
-              <div class="project-content">
-                <header class="project-header">
-                  <h3 class="project-title font-poppins-l">Portal Empreendimentos</h3>
-                </header>
-
-                <p class="project-description font-roboto-s">
-                  Aplicação web que permite a cidadãos, empresas e contadores consultar, regularizar e acompanhar dados
-                  empresariais junto ao município. O sistema reúne autenticação segura, consultas fiscais, geração de
-                  boletos e recursos de acessibilidade.
-                </p>
-
-                <footer>
-                  <a href="https://github.com/portal-empreendimentos" target="_blank"
-                    class="button project-cta font-poppins-s"
-                    aria-label="Ver mais sobre Portal Consulta Empreendimentos">
-                    Ver Mais
-                  </a>
-                </footer>
-              </div>
-            </article>
           </div>
           <div class="swiper-pagination slide-pagination" aria-label="Paginação dos projetos"></div>
         </div>
@@ -470,7 +361,6 @@
       </div>
     </div>
   </section>
-
 
   <div class="divider"></div>
 
@@ -504,9 +394,6 @@
           <span id="toastMsg"></span>
           <span class="toast_bar" aria-hidden="true"></span>
         </div>
-
-
-
       </div>
     </div>
   </section>
@@ -537,33 +424,15 @@
     </div>
   </footer>
 
+  <script src="./scripts/loadProjects.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="./scripts/alterLogo.js"></script>
   <script src="./scripts/gridGenerate.js"></script>
-  <script src="./scripts/aboutCarousel.js"></script>
-  <script src="./scripts/projectsCarousel.js"></script>
+  <script src="./scripts/carousel.js"></script>
   <script src="./scripts/menu-mobile.js"></script>
   <script src="./scripts/scrollReveal.js"></script>
   <script src="./scripts/contactForm.js" defer></script>
-
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const swiper = new Swiper('.mySkillsSwiper', {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        grid: { rows: 2, fill: 'row' },
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { prevEl: '#btn-left', nextEl: '#btn-right' },
-        breakpoints: {
-          0: { slidesPerView: 1, grid: { rows: 2 } },
-          481: { slidesPerView: 2, grid: { rows: 2 } },
-          1025: { slidesPerView: 3, grid: { rows: 2 } },
-        },
-      });
-    });
-  </script>
 </body>
 
 </html>
