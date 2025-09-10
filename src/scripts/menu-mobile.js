@@ -8,8 +8,6 @@
     header.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
     document.body.classList.add("no-scroll");
-    // foco no primeiro link ao abrir
-    focusables[0]?.focus();
   }
 
   function closeMenu() {
@@ -23,13 +21,11 @@
     expanded ? closeMenu() : openMenu();
   });
 
-  // Fecha ao clicar em links
   panel.addEventListener("click", (e) => {
     const isLink = e.target.closest("a, button");
     if (isLink) closeMenu();
   });
 
-  // Fecha com ESC e clique fora
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });
@@ -39,7 +35,6 @@
     if (!clickingInside) closeMenu();
   });
 
-  // Reseta se voltar para desktop
   window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {
       closeMenu();
