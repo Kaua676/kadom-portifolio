@@ -146,3 +146,10 @@
     height: 250px;
   }
 }
+
+@media (max-width: 360px) {
+  .animated-blob {
+    width: 200px;
+    height: 200px;
+  }
+}

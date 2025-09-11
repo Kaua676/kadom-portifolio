@@ -194,3 +194,17 @@
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 360px) {
+  .training-section .courses-list {
+    max-height: 180px;
+  }
+
+  .training-section .formation {
+    padding: 16px;
+  }
+
+  .languages {
+    margin-top: 2rem;
+  }
+}

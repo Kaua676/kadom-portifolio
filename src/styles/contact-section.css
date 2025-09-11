@@ -181,3 +181,17 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 360px) {
+  .contact-form {
+    padding: 0 1rem;
+  }
+  .contact-form .input-group,
+  .contact-form .textarea-group {
+    padding: 1.5rem;
+  }
+  .form-btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
