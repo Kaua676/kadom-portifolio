@@ -42,7 +42,7 @@ document.addEventListener("projectsLoaded", () => {
         centeredSlides: false,
         spaceBetween: 20,
       },
-      950: {
+      1025: {
         slidesPerView: 3,
         centeredSlides: false,
         spaceBetween: 25,

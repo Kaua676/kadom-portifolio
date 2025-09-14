@@ -19,7 +19,7 @@ const projects = [
   },
   {
     repo: "J-A-Digix",
-    user: "",
+    user: "J-A-Digix",
     title: "NutriVision",
     description:
       "O NutriVision é uma plataforma completa para análise nutricional de cardápios escolares. A solução é dividida em três módulos principais: API de formatação de cardápios, base de dados nutricional e interface web interativa.",

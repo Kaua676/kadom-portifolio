@@ -25,7 +25,7 @@
 
   // Socials
   sr.reveal(".about-section .socials-title", { origin: "bottom" });
-  sr.reveal(".about-section .socials .social", {
+  sr.reveal(".about-section .socials", {
     origin: "bottom",
     interval: 60,
   });
