@@ -138,8 +138,13 @@
 }
 
 @media (max-width: 1024px) {
+  .about-section {
+    min-height: 120vh;
+    min-height: 120dvh;
+  }
   .about-content {
     grid-template-columns: 1fr;
+    gap: 100px;
   }
   .about-section .swiper {
     max-width: 800px;

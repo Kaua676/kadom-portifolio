@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 1400px) {
+  .hero-section {
+    min-height: 120vh;
+    min-height: 120dvh;
+  }
   .hero-content {
     gap: 48px;
   }

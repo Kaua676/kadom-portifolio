@@ -74,17 +74,21 @@ button {
   margin-top: 2rem;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1401px) {
   .container {
     max-width: 1200px;
   }
 
   .subtitle {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+
   .subtitle {
     font-size: 6rem;
     justify-content: center;

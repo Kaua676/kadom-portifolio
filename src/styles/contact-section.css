@@ -138,9 +138,14 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1401px) {
   .contact-content {
     gap: 100px;
+  }
+
+  .contact-section {
+    min-height: 120vh;
+    min-height: 120dvh;
   }
 }
 

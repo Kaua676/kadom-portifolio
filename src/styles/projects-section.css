@@ -167,6 +167,13 @@ html {
   background-color: var(--accent-color);
 }
 
+@media (max-width: 1400px) {
+  .projects-section {
+    min-height: 150vh;
+    min-height: 150dvh;
+  }
+}
+
 @media (max-width: 1024px) {
   .projects-section .subtitle {
     margin: 0 auto;
