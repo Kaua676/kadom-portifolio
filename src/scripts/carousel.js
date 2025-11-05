@@ -15,8 +15,15 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // Projects Carousel
+let projectsSwiperInstance = null;
+
 document.addEventListener("projectsLoaded", () => {
-  new Swiper(".slide-content", {
+  if (projectsSwiperInstance) {
+    projectsSwiperInstance.destroy(true, true);
+    projectsSwiperInstance = null;
+  }
+
+  projectsSwiperInstance = new Swiper(".slide-content", {
     loop: false,
     grabCursor: true,
     spaceBetween: 25,

@@ -8,31 +8,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="shortcut icon" id="favicon" href="./assets/imgs/favicon-light.svg" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <title>Kauã Vicente Domingos | Desenvolvedor Full Stack | Portfólio Kadom</title>
+  <title>Kauã Vicente Domingos | Designer de Produto & Desenvolvedor</title>
   <meta name="description"
-    content="Portfólio de Kauã Vicente Domingos, desenvolvedor full stack apaixonado por criar soluções criativas em front-end e back-end. Veja projetos, formação e contato.">
-  <meta property="og:title" content="Kadom | Portfólio de Kauã Vicente Domingos">
-  <meta property="og:description" content="Projetos, formação e tecnologias utilizadas por Kauã Vicente Domingos.">
+    content="Portfólio híbrido de Kauã Vicente Domingos, Designer de Produto Júnior com background em desenvolvimento full stack. Conheça projetos, experiências e formações em UX/UI, pesquisa e tecnologia.">
+  <meta property="og:title" content="Kadom | Portfólio de Produto e Tecnologia">
+  <meta property="og:description"
+    content="Projetos, experiências e formações de Kauã Vicente Domingos integrando design de produto e desenvolvimento.">
   <meta property="og:image" content="https://kadom.com.br/assets/imgs/favicon-light.svg">
   <meta property="og:url" content="https://kadom.com.br/">
   <meta property="og:type" content="website">
 
-  <meta property="og:title" content="Kadom | Portfólio de Kauã Vicente Domingos">
+  <meta property="og:title" content="Kadom | Portfólio de Produto e Tecnologia">
   <meta property="og:description"
-    content="Portfólio de Kauã Vicente Domingos. Desenvolvedor Full Stack com projetos em front-end e back-end.">
+    content="Portfólio híbrido de Kauã Vicente Domingos. Designer de Produto Júnior com histórico em desenvolvimento full stack.">
   <meta property="og:image" content="https://kadom.com.br/assets/imgs/icon.png">
   <meta property="og:url" content="https://kadom.com.br">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kadom | Portfólio de Kauã Vicente Domingos">
-  <meta name="twitter:description" content="Projetos, formação e tecnologias.">
+  <meta name="twitter:title" content="Kadom | Portfólio de Produto e Tecnologia">
+  <meta name="twitter:description"
+    content="Portfólio híbrido de Kauã Vicente Domingos, integrando design de produto e desenvolvimento.">
   <meta name="twitter:image" content="https://kadom.com.br/assets/imgs/icon.png">
 
 </head>
 
-<body>
+<body class="theme-design">
   <header class="header-container">
     <div class="header-content">
       <a href="./" class="logo-link">
@@ -48,8 +50,9 @@
         <nav aria-label="Navegação principal">
           <ul class="header-menu font-roboto-m" id="primary-navigation">
             <li><a href="#about">Sobre</a></li>
+            <li><a href="#professional">Profissional</a></li>
             <li><a href="#training">Formação</a></li>
-            <li><a href="#projects">Experiência</a></li>
+            <li><a href="#projects">Portfólio</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
@@ -67,14 +70,19 @@
 
     <div class="container hero-content">
       <div class="hero-description">
+        <div class="mode-switch" role="group" aria-label="Alternar foco do portfólio">
+          <button class="mode-switch__button" data-mode="design" aria-pressed="true">Design</button>
+          <button class="mode-switch__button" data-mode="developer" aria-pressed="false">Desenvolvedor</button>
+        </div>
         <h1 class="font-poppins-xxl">
           <span>Olá,</span>
           <span>Meu nome é</span>
           <span class="hero-name">Kauã Vicente Domingos</span>
         </h1>
-        <p class="font-roboto-m">
-          Cada projeto é uma oportunidade de combinar estética com
-          funcionalidade, entregando resultados que fazem a diferença.
+        <p class="hero-role font-roboto-l" data-content-key="heroRole">Designer de Produto Júnior</p>
+        <p class="font-roboto-m" data-content-key="heroDescription">
+          Investigo necessidades reais, desenho jornadas claras e prototipagens colaborativas para transformar visões em
+          experiências digitais consistentes.
         </p>
       </div>
 
@@ -93,11 +101,11 @@
       <h2 class="subtitle">Sobre mim</h2>
 
       <div class="about-right">
-        <p class="description font-roboto-m">
-          Desde cedo sempre gostei de entender como as coisas funcionam e transformar ideias em soluções. Hoje sigo esse
-          caminho na tecnologia, explorando do front-end ao back-end e desenvolvendo projetos que unem lógica e
-          criatividade. Nesta seção compartilho as tecnologias que fazem parte da minha rotina e os canais onde você
-          pode se conectar comigo.
+        <p class="description font-roboto-m" data-content-key="aboutDescription">
+          A tecnologia sempre fez parte da minha trajetória, mas foi no design de produto que encontrei a forma ideal de
+          conectar pessoas, negócios e código. Atuo como Designer de Produto Júnior, conduzindo pesquisas, mapeando
+          jornadas e articulando soluções junto a times multidisciplinares. Aqui compartilho as ferramentas que utilizo
+          para transformar descobertas em experiências digitais consistentes.
         </p>
 
         <div class="btn-container">
@@ -266,65 +274,40 @@
 
   <div class="divider"></div>
 
+  <!-- PROFESSIONAL SECTION -->
+  <section id="professional" class="professional-section">
+    <div class="container professional-content">
+      <h2 class="subtitle">Profissional</h2>
+
+      <div class="professional-copy">
+        <p class="font-roboto-m" data-content-key="professionalIntro">
+          Experiências em produto e desenvolvimento que combinam discovery contínuo, colaboração com engenharia e
+          entregas mensuráveis para o negócio.
+        </p>
+      </div>
+
+      <div class="experience-grid" data-content-key="professionalTimeline" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- TRAINING SECTION -->
   <section id="training" class="training-section">
     <div class="container training-content">
       <h2 class="subtitle">Formação</h2>
 
       <div>
-        <p class="description font-roboto-m">
-          Acredito no aprendizado contínuo como forma de evolução profissional. Aqui estão minhas duas especializações
-          e os cursos que ampliaram meus conhecimentos ao longo da trajetória.
+        <p class="description font-roboto-m" data-content-key="trainingDescription">
+          Minha base combina desenvolvimento de software, engenharia de processos e especializações em UX/UI. O
+          aprendizado contínuo mantém minha prática alinhada às necessidades das pessoas e do negócio.
         </p>
 
-        <ul class="study-list font-roboto-s">
-          <li class="formation">
-            <span class="formation-type">Tecnólogo</span>
-            <h3 class="formation-course">Analise e Desenvolvimento de Sistemas</h3>
-            <span class="formation-academy">Insted</span>
-          </li>
-
-          <li class="formation">
-            <span class="formation-type">Pós Graduação</span>
-            <h3 class="formation-course">Eng. de Software</h3>
-            <span class="formation-academy">Uniderp</span>
-          </li>
-
-          <!-- <li class="formation">
-            <span class="formation-type">Pós Graduação</span>
-            <h3 class="formation-course">UX Design</h3>
-            <span class="formation-academy">Uniderp</span>
-          </li> -->
-        </ul>
+        <ul class="study-list font-roboto-s" data-content-key="formations" aria-live="polite"></ul>
 
         <div class="courses">
           <h3 class="courses-title font-roboto-m">Cursos</h3>
-          <ul class="courses-list font-roboto-m">
-            <li class="course">
-              HTML e CSS para Iniciantes <span>46h</span>
-            </li>
-            <li class="course">
-              UI Design Avançado <span>15h</span>
-            </li>
-            <li class="course">
-              UX Design Heurísticas <span>15h</span>
-            </li>
-            <li class="course">
-              React Completo <span>15h</span>
-            </li>
-            <li class="course">
-              UX UI Design FIGMA + IA <span>20h</span>
-            </li>
-            <li class="course">
-              Desenvolvimento Web Completo <span>120h</span>
-            </li>
-            <li class="course">
-              Linux Fundamentos <span>40h</span>
-            </li>
-            <li class="course">
-              Cloud Fundamentals, Administration and Solution Architect <span>80h</span>
-            </li>
-          </ul>
+          <ul class="courses-list font-roboto-m" data-content-key="courses" aria-live="polite"></ul>
         </div>
 
         <div class="languages">
@@ -334,7 +317,7 @@
               <p>Português</p>
             </li>
             <li class="language">
-              <p>Ingles</p>
+              <p>Inglês</p>
             </li>
           </ul>
         </div>
@@ -348,11 +331,25 @@
     <div class="container projects-content">
       <h2 class="subtitle">Meu Portfólio</h2>
 
-      <div class="swiper slide-container">
-        <div class="slide-content">
-          <div class="swiper-wrapper card-wrapper">
+      <div class="projects-header">
+        <p class="font-roboto-m" data-content-key="projectsIntro">
+          Uma seleção de projetos de design de produto e desenvolvimento que demonstram minha atuação ponta a ponta — do
+          discovery à entrega técnica.
+        </p>
 
-          </div>
+        <div class="projects-filters" role="tablist" aria-label="Filtrar projetos">
+          <button class="projects-filter" data-project-filter="design" role="tab" aria-selected="true">
+            Projetos de Design
+          </button>
+          <button class="projects-filter" data-project-filter="development" role="tab" aria-selected="false">
+            Projetos de Desenvolvimento
+          </button>
+        </div>
+      </div>
+
+      <div class="swiper slide-container" data-active-category="design">
+        <div class="slide-content">
+          <div class="swiper-wrapper card-wrapper" data-category="design"></div>
           <div class="swiper-pagination slide-pagination" aria-label="Paginação dos projetos"></div>
         </div>
 
@@ -424,6 +421,7 @@
     </div>
   </footer>
 
+  <script src="./scripts/modeToggle.js"></script>
   <script src="./scripts/loadProjects.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
