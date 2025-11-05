@@ -39,6 +39,11 @@
   sr.reveal(".languages .languages-title", { origin: "bottom" });
   sr.reveal(".languages .language", { origin: "bottom", interval: 50 });
 
+  // Professional
+  sr.reveal(".professional-section .subtitle", { origin: "bottom" });
+  sr.reveal(".professional-copy", { origin: "bottom", delay: 150 });
+  sr.reveal(".experience-card", { origin: "bottom", interval: 120 });
+
   // Projects
   sr.reveal(".projects-section", { origin: "bottom", interval: 200 });
 

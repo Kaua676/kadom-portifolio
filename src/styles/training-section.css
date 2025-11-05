@@ -101,10 +101,31 @@
   border-radius: 4px;
   padding: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(124, 77, 255, 0.08);
 }
 
 .course:hover {
   border: 1px solid var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.course:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+body.theme-developer .course {
+  background-color: rgba(0, 150, 230, 0.08);
+}
+
+.course-title {
+  color: var(--primary-text-color);
+}
+
+.course-hours {
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .languages {
