@@ -34,13 +34,20 @@
   sr.reveal(".training-section .subtitle", { origin: "bottom" });
   sr.reveal(".training-section .description", { origin: "bottom", delay: 200 });
   sr.reveal(".training-section .formation", { origin: "bottom", interval: 80 });
-  sr.reveal(".courses .courses-title", { origin: "bottom" });
-  sr.reveal(".courses .course", { origin: "bottom", interval: 50 });
+  sr.reveal(".certificates .certificates-title", { origin: "bottom" });
+  sr.reveal(".certificates .course", { origin: "bottom", interval: 50 });
   sr.reveal(".languages .languages-title", { origin: "bottom" });
   sr.reveal(".languages .language", { origin: "bottom", interval: 50 });
 
+  // Professional
+  sr.reveal(".professional-section .subtitle", { origin: "bottom" });
+  sr.reveal(".professional-section .description", { origin: "bottom", delay: 150 });
+  sr.reveal(".experience-card", { origin: "bottom", interval: 120 });
+
   // Projects
-  sr.reveal(".projects-section", { origin: "bottom", interval: 200 });
+  sr.reveal(".projects-intro", { origin: "bottom" });
+  sr.reveal(".projects-tabs", { origin: "bottom", delay: 150 });
+  sr.reveal(".projects-section .project-card", { origin: "bottom", interval: 90 });
 
   // Contact
   sr.reveal(".contact-section .subtitle", { origin: "bottom" });

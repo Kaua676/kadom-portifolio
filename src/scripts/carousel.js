@@ -16,37 +16,56 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Projects Carousel
 document.addEventListener("projectsLoaded", () => {
-  new Swiper(".slide-content", {
-    loop: false,
-    grabCursor: true,
-    spaceBetween: 25,
-    slidesPerView: 3,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.08,
-        centeredSlides: true,
-        spaceBetween: 16,
-        navigation: false,
+  const swipers = [];
+
+  document.querySelectorAll(".projects-group .slide-container").forEach((container) => {
+    const slideContent = container.querySelector(".slide-content");
+    const pagination = container.querySelector(".swiper-pagination");
+    const nextEl = container.querySelector(".swiper-button-next");
+    const prevEl = container.querySelector(".swiper-button-prev");
+
+    if (!slideContent || !pagination) return;
+
+    const swiper = new Swiper(slideContent, {
+      loop: false,
+      grabCursor: true,
+      watchOverflow: true,
+      spaceBetween: 25,
+      slidesPerView: 3,
+      pagination: {
+        el: pagination,
+        clickable: true,
+        dynamicBullets: true,
       },
-      520: {
-        slidesPerView: 2,
-        centeredSlides: false,
-        spaceBetween: 20,
+      navigation: {
+        nextEl,
+        prevEl,
       },
-      1025: {
-        slidesPerView: 3,
-        centeredSlides: false,
-        spaceBetween: 25,
+      breakpoints: {
+        0: {
+          slidesPerView: 1.08,
+          centeredSlides: true,
+          spaceBetween: 16,
+          navigation: false,
+        },
+        520: {
+          slidesPerView: 2,
+          centeredSlides: false,
+          spaceBetween: 20,
+        },
+        1025: {
+          slidesPerView: 3,
+          centeredSlides: false,
+          spaceBetween: 25,
+        },
       },
-    },
+    });
+
+    swipers.push({
+      group: container.dataset.group,
+      instance: swiper,
+    });
   });
+
+  window.projectSwipers = swipers;
 });

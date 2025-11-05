@@ -18,6 +18,57 @@ html {
   word-break: break-all;
 }
 
+.projects-intro {
+  display: grid;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.projects-intro .description {
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.projects-tabs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0 auto;
+}
+
+.projects-tab {
+  border: none;
+  background: transparent;
+  color: var(--secondary-text-color);
+  padding: 10px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.projects-tab.active {
+  background: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+.projects-groups {
+  position: relative;
+}
+
+.projects-group {
+  transition: opacity 0.3s ease;
+}
+
+.projects-group:not(.is-active) {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .projects-section .slide-container {
   max-width: 1200px;
   width: 100%;
@@ -180,6 +231,10 @@ html {
   .projects-section .slide-content {
     margin: 0 20px;
   }
+
+  .projects-tabs {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -194,6 +249,10 @@ html {
   .projects-section .slide-right,
   .projects-section .slide-left {
     display: none;
+  }
+
+  .projects-intro .description {
+    text-align: left;
   }
 
   .project-techs {
